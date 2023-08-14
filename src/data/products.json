@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Marvel SpiderMan Remastered",
+    "description": "Marvel's Spider-Man Remasterizado nos trae a un Peter Parker más experimentado que lucha contra organizaciones criminales y villanos emblemáticos en la ciudad de Nueva York de Marvel",
+    "code": "398987",
+    "price": "22000",
+    "status": "true",
+    "stock": "40",
+    "category": "Aventura"
+  },
+  {
+    "id": 2,
+    "title": "Need For Speed Heat",
+    "description": "Una emocionante experiencia de carreras en la que te enfrentas a la policía corrupta de una ciudad mientras luchas por alcanzar la élite de las carreras callejeras.",
+    "code": "398234",
+    "price": "6000",
+    "status": "true",
+    "stock": "70",
+    "category": "Carreras"
+  },
+  {
+    "id": 3,
+    "title": "Grand Theft Auto V",
+    "description": "Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y Blaine County con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.",
+    "code": "398097",
+    "price": "5500",
+    "status": "true",
+    "stock": "90",
+    "category": "Accion"
+  }
+]
