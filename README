@@ -1,0 +1,8 @@
+### Entrega WebSockets
+
+ - EndPoints:
+http://localhost:8080/realtimeproducts
+Para añadir y sacar Productos junto con la vista en tiempo real
+
+http://localhost:8080/
+Para una vista estatica de todos los productos que tienes
