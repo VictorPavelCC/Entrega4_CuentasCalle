@@ -49,31 +49,31 @@ app.get("/realtimeproducts", async (req, res) => {
 
 //Config socket.io
 io.on("connection", (socket) => {
-    console.log("Un cliente se ha conectado");
+    console.log("Un cliente se ha conectado")
 
     socket.on("newProduct", async (product) => {
         try {
-            const newId = await productsContainer.save(product);
-            product.id = newId;
+            const newId = await productsContainer.save(product)
+            product.id = newId
 
-            const products = await productsContainer.getAll();
+            const products = await productsContainer.getAll()
             
-            io.emit("productsList", products);
+            io.emit("productsList", products)
         } catch (error) {
-            console.error("Error al guardar el producto:", error);
+            console.error("Error al guardar el producto:", error)
         }
-    });
+    })
 
     socket.on("deleteProduct", async (id_product) => {
         try {
-            await productsContainer.deleteById(id_product);
-            const products = await productsContainer.getAll();
-            io.emit("productsList", products);
+            await productsContainer.deleteById(id_product)
+            const products = await productsContainer.getAll()
+            io.emit("productsList", products)
         } catch (error) {
-            console.error("Error al eliminar el producto:", error);
+            console.error("Error al eliminar el producto:", error)
         }
-    });
-});
+    })
+})
 
 
 

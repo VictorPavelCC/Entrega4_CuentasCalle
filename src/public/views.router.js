@@ -48,7 +48,7 @@ function appendProduct(data) {
             socket.emit("deleteProduct", p.id)
             productElement.innerHTML = ""
         })
-    });
+    })
 
 }
 
